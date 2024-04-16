@@ -1,5 +1,5 @@
 #SERVER ADMINISTRATION PANEL USE TO CREATE USERS 
-import sqlite3, os, re
+import sqlite3, os, re, getpass
 from time import sleep
 from pathlib import Path
 import hashlib
@@ -52,8 +52,8 @@ while manage:
 
         add_password = True
         while add_password:
-            password = str(input("Enter password: "))
-            re_password = str(input("Enter password again: "))
+            password = str(getpass.getpass("Enter password: "))
+            re_password = str(getpass.getpass("Enter password again: "))
             if password == re_password:
                 add_password = False
             else:
