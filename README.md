@@ -6,7 +6,7 @@ I wanted to create something that will perform its main abillity through the net
 2. client.py - enables connecting with server side app and sending files to server
 3. add_user.py - admin interface for users management
 
-## How does this work?
+## How does it work?
 The comunication beetwen server and client side app rely on the python socket module. The comunication will be possible only if you enter the correct informations about ip addres and the port number where the server will be listening for connections. Ofcourse you need to place add_user.py and server.py on the server machine and the client.py on the PC which you want send data from. I recomemend to create separate folders for server side apps, because during the configuration server app will create files and directiories.
 
 ## Users Management App
